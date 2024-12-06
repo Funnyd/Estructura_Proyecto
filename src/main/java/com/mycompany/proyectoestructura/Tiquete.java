@@ -4,13 +4,15 @@
  */
 package com.mycompany.proyectoestructura;
 
+
 /**
  *
  * @author dques
  */
 public class Tiquete {
-    private String nombre, horaCreacion, tramite, tipo;
-    private int edad, horaAtencion;
+    private String nombre, tramite, tipo;
+    private int edad ;
+    private String horaCreacion, horaAtencion;
     private Long id;
 
     
@@ -18,7 +20,7 @@ public class Tiquete {
         
     }
 
-    public Tiquete(String nombre, String horaCreacion, String tramite, String tipo, int edad, int horaAtencion, Long id) {
+    public Tiquete(String nombre, String horaCreacion, String tramite, String tipo, int edad, String horaAtencion, Long id) {
         this.nombre = nombre;
         this.horaCreacion = horaCreacion;
         this.tramite = tramite;
@@ -40,7 +42,7 @@ public class Tiquete {
         return edad;
     }
 
-    public int getHoraAtencion() {
+    public String getHoraAtencion() {
         return horaAtencion;
     }
 
@@ -68,7 +70,7 @@ public class Tiquete {
         this.edad = edad;
     }
 
-    public void setHoraAtencion(int horaAtencion) {
+    public void setHoraAtencion(String horaAtencion) {
         this.horaAtencion = horaAtencion;
     }
 
