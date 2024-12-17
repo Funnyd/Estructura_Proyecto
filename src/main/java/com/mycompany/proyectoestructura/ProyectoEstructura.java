@@ -167,24 +167,28 @@ public class ProyectoEstructura {
                         }
 
                         case 2 -> {
-                            CajaR.atiende();
+                            tiqueteBD = CajaR.atiende();
                             VER(2);
                             registrarAccion("Caja Rapida");
+                            guardarTiquete(tiqueteBD);
                         }
                         case 3 -> {
-                            Caja1.atiende();
+                            tiqueteBD = Caja1.atiende();
                             VER(3);
                             registrarAccion("Caja 1");
+                            guardarTiquete(tiqueteBD);
                         }
                         case 4 -> {
-                            Caja2.atiende();
+                            tiqueteBD = Caja2.atiende();
                             VER(4);
                             registrarAccion("Caja 2");
+                            guardarTiquete(tiqueteBD);
                         }
                         case 5 -> {
-                            Caja3.atiende();
+                            tiqueteBD = Caja3.atiende();
                             VER(5);
                             registrarAccion("Caja 3");
+                            guardarTiquete(tiqueteBD);
                         }
                     }
                 }

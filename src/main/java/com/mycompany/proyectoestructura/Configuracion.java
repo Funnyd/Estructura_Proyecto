@@ -104,7 +104,7 @@ public class Configuracion {
         //--------------------------METODO PARA GUARDAR TIQUETES-------------------------//
 
     public static boolean guardarTiquete(Tiquete tiquete) {
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter("tiquetes.txt", true))) {
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter("Reporte.txt", true))) {
         writer.write(tiquete.toString()); 
         writer.newLine();
         return true;
